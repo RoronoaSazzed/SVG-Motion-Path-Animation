@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>SVG - Motion Path | Animation</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .parentDiv {
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+      }
+
+      .wrapper {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentDiv">
+      <div class="wrapper">
+        <svg
+          width="100%"
+          min-height="0"
+          viewBox="0 0 626 180"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            opacity="0.8"
+            d="M586.372 151.621H39.628C39.628 91.2303 88.585 42.2732 148.977 42.2732L477.023 42.2732C537.415 42.2733 586.372 91.2303 586.372 151.621Z"
+            fill="url(#paint0_linear_1_5)"
+          />
+          <path
+            opacity="0.8"
+            d="M24.8911 151.622C24.8911 83.5565 76.4873 28.3785 140.135 28.3785L485.865 28.3785C549.513 28.3785 601.109 83.5565 601.109 151.622"
+            stroke="#A595E2"
+            id="curvyPath"
+          />
+          <text fill="#c490dd">
+            <textpath xlink:href="#curvyPath">
+              This personal space is owned & secured on web3
+
+              <animate
+                attributeName="startOffset"
+                from="-60%"
+                to="100%"
+                begin="0s"
+                dur="10s"
+                repeatCount="indefinite"
+                keyTimes="0;1"
+              />
+            </textpath>
+          </text>
+          <defs>
+            <linearGradient
+              id="paint0_linear_1_5"
+              x1="520.205"
+              y1="286.029"
+              x2="363.673"
+              y2="-19.939"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#4368EA" />
+              <stop offset="1" stop-color="#C490DD" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
